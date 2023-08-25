@@ -43,3 +43,27 @@ The main reason for the repo existence is to have near hand all the major (and m
     ```
     
     The last command will let Git know that it has to track all changes on that folder.
+
+    ## Time to save some changes
+
+- **Add Files to Staging:**
+   Before committing changes, you must stage the files you want to include in the next commit. Use the following command to add specific files or all files in the directory to the staging area:
+   
+   ```
+   git add filename     # Add a specific file
+   git add .            # Add all files
+   ```
+
+- **Commit Changes:**
+   Committing captures a snapshot of the staged changes with a meaningful message describing your actions. Use this command to commit your changes:
+   
+   ```
+   git commit -m "Your commit message here"
+   ```
+
+- **Add files to Staging and Committing all together:**
+   You can do both previous actions at the same time by using the following command:
+
+    ```
+   git commit -am "Your commit message here"
+   ```
