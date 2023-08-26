@@ -44,7 +44,7 @@ The main reason for the repo existence is to have near hand all the major (and m
     
     The last command will let Git know that it has to track all changes on that folder.
 
-    ## Time to save some changes
+## Time to save some changes
 
 - **Add Files to Staging:**
    Before committing changes, you must stage the files you want to include in the next commit. Use the following command to add specific files or all files in the directory to the staging area:
@@ -67,3 +67,58 @@ The main reason for the repo existence is to have near hand all the major (and m
     ```
    git commit -am "Your commit message here"
    ```
+
+## More interesting commands
+
+- **Viewing History:**
+   You can view the commit history using:
+   
+   ```
+   git log --oneline
+   ```
+
+-  **Working with Remotes:**
+   Git allows collaboration by syncing repositories between your local machine and remote servers like GitHub, GitLab, or Bitbucket. You can connect your local repository to a remote repository using:
+
+   ```
+   git remote rm origin
+   git remote add origin <remote_repository_url>
+   git push -u origin main
+   ```
+   
+   The first line will remove the origin from a Git repository (do it just once), the second one will connect with the remote Repo, and the last will be pushing all changes to that Repo.
+
+- **Push and Pull:**
+   To send your local changes to the remote repository, use:
+   
+   ```
+   git push origin main   # Push to the "main" branch
+   ```
+
+   To get the latest changes from the remote repository, use:
+   
+   ```
+   git pull origin main   # Pull changes into your local "main" branch
+   ```
+
+- **Branching:**
+   Branches allow you to work on separate features or fixes without affecting the main codebase. To create a new branch and switch to it, use:
+   
+   ```
+   git checkout -b new-branch
+   ```
+
+- **Merging:**
+    When your work on a branch is complete, you can merge it back into the main branch. First, switch to the main branch:
+    
+    ```
+    git checkout main
+    ```
+    
+    Then, merge the changes from your feature branch:
+    
+    ```
+    git merge new-branch
+    ```
+
+**And that's pretty much it, at least for now. I'll be updating with Repo based on my needs, so if you see something odd within it,  probablably it's going to be fixed later on.**
