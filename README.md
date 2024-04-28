@@ -81,12 +81,12 @@ The main reason for the Repo existence is to have near hand all the major (and m
    Git allows collaboration by syncing repositories between your local machine and remote servers like GitHub, GitLab, or Bitbucket. You can connect your local repository to a remote repository using:
 
    ```
-   git remote rm origin
+   git branch -M main
    git remote add origin <remote_repository_url>
    git push -u origin main
    ```
    
-   The first line will remove the origin from a Git repository, the second one will connect with the remote Repo, and the last will be pushing all changes to that Repo. Note: The first two lines will be needed just once.
+   The first line will rename the origin branch on the Git repository, the second one will connect with the remote Repo, and the last will be pushing all changes to that Repo. Note: The first two lines will be needed just once.
 
 - **Push and Pull:**
    To send your local changes to the remote repository, use:
